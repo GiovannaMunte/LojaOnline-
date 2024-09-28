@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('imagens/6418602-linhas-finas-abstratas-suave-em-fundo-azul-escuro-tecnologia-futurista-design-pano-de-fundo-com-transicao-degrade-roxo-e-azul-vetor.jpg');
+    background-size: cover;
+    color: white;
+    padding: 20px;
+}
+
+.produto, .carrinho, .acoes {
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+

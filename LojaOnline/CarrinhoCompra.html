@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CarrinhoCompra.css">
+    <title>Loja Eletronicos</title>
+</head>
+<body background="imagens/6418602-linhas-finas-abstratas-suave-em-fundo-azul-escuro-tecnologia-futurista-design-pano-de-fundo-com-transicao-degrade-roxo-e-azul-vetor.jpg"</bodybackground>>
+    <h1>Carrinho de Compras</h1>
+
+    <div class="produto">
+        <h2>Produto a ser adicionado</h2>
+        <p>ID: <span>1</span></p>
+        <p>Nome: <span>Smartphone</span></p>
+        <p>Valor Unitário: R$ <span>500.00</span></p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH3O-sVWqBfOXDfjd35Tpf8lvC_mPP6Er3MA&s" alt="Imagem do Produto" width="100">
+        <button onclick="adicionarAoCarrinho(1, 'Smartphone', 500.00, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH3O-sVWqBfOXDfjd35Tpf8lvC_mPP6Er3MA&s')">Adicionar ao Carrinho</button>
+    </div>
+    <div class="produto">
+        <h2>Produto a ser adicionado</h2>
+        <p>ID: <span>2</span></p>
+        <p>Nome: <span>Notebook</span></p>
+        <p>Valor Unitário: R$ <span>550.00</span></p>
+        <img src="https://img.terabyteshop.com.br/produto/g/notebook-gamer-superframe-force-intel-core-i5-12450h-rtx-4050-6gb-16gb-ddr4-ssd-1tb_185157.jpg" alt="Imagem do Produto" width="100">
+        <button onclick="adicionarAoCarrinho(2, 'Notebook', 550.00, 'https://img.terabyteshop.com.br/produto/g/notebook-gamer-superframe-force-intel-core-i5-12450h-rtx-4050-6gb-16gb-ddr4-ssd-1tb_185157.jpg')">Adicionar ao Carrinho</button>
+    </div>
+    <div class="produto">
+        <h2>Produto a ser adicionado</h2>
+        <p>ID: <span>3</span></p>
+        <p>Nome: <span>Mouse Gamer</span></p>
+        <p>Valor Unitário: R$ <span>600.00</span></p>
+        <img src="https://m.media-amazon.com/images/I/61lCLrCtuhL._AC_UF894,1000_QL80_.jpg" alt="Imagem do Produto" width="90">
+        <button onclick="adicionarAoCarrinho(3, 'Mouse Gamer', 600.00, 'https://m.media-amazon.com/images/I/61lCLrCtuhL._AC_UF894,1000_QL80_.jpg')">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="carrinho">
+        <h2>Itens no Carrinho</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>ID do Produto</th>
+                    <th>Nome do Produto</th>
+                    <th>Valor Unitário</th>
+                    <th>Valor Total</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="carrinho">
+                
+            </tbody>
+        </table>
+        <p>Total da Compra: R$ <span id="totalCompra">0.00</span></p>
+    </div>
+
+    <div class="acoes">
+        <button onclick="finalizarCompra()">Encerrar Compra</button>
+        <button onclick="window.location.href='PaginaCompleta.html'">Voltar para página inicial</button>
+    </div>
+    <script src="CarrinhoCompra.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f248;
+    margin: 0;
+}
+.login-container {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+.login-container label, .login-container input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    padding: 6px;
+    border-radius: 4px;
+}
+.login-container input[type="submit"] {
+    background-color: #12048be4;
+    color: rgb(255, 255, 255);
+    padding: 11px;
+    border-radius: 4px;
+    cursor: pointer;
+}
